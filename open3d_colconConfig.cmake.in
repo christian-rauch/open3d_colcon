@@ -1,0 +1,14 @@
+# - Config file for the open3d_colcon package
+# It defines the following variables
+#  open3d_colcon_INCLUDE_DIRS - include directories for FooBar
+#  open3d_colcon_LIBRARIES    - libraries to link against
+#  open3d_colcon_EXECUTABLE   - the bar executable
+
+set(open3d_colcon_INCLUDE_DIRS "@CONF_INCLUDE_DIRS@")
+
+# Our library dependencies (contains definitions for IMPORTED targets)
+include("${open3d_colcon_DIR}/export_open3d_colcon.cmake")
+
+# These are IMPORTED targets created by open3d_colconTargets.cmake
+
+
