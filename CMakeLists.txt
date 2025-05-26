@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.22)
 project(open3d)
 
 set(open3d_colcon_MAJOR_VERSION 0)
