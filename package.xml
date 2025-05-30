@@ -9,6 +9,10 @@
 
   <buildtool_depend>cmake</buildtool_depend>
 
+  <depend>libx11</depend>
+  <depend>libc++-dev</depend>
+  <depend>opengl</depend>
+
   <export>
     <build_type>cmake</build_type>
   </export>
