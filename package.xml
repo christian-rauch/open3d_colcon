@@ -3,9 +3,10 @@
 <package format="3">
   <name>open3d</name>
   <version>0.19.0</version>
-  <description>TODO: Package description</description>
+  <description>Open3D is an open-source library that supports rapid development of software that deals with 3D data.</description>
   <maintainer email="Christian.Rauch@unileoben.ac.at">Christian Rauch</maintainer>
   <license>MIT</license>
+  <url>https://www.open3d.org</url>
 
   <buildtool_depend>cmake</buildtool_depend>
 
