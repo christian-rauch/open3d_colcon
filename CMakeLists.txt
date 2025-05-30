@@ -21,6 +21,15 @@ ExternalProject_Add(o3d_archive
 ExternalProject_Get_Property(o3d_archive SOURCE_DIR)
 set(O3D_PATH ${SOURCE_DIR})
 
+# ignore "gmock" and "gtest"
+# ignore "open3d_tf_ops.so" due to missing "libtensorflow_framework.so.2"
 install(DIRECTORY ${O3D_PATH}/
     DESTINATION .
+    PATTERN "include/gmock" EXCLUDE
+    PATTERN "include/gtest" EXCLUDE
+    PATTERN "*gmock*.*" EXCLUDE
+    PATTERN "*gtest*.*" EXCLUDE
+    PATTERN "GTest" EXCLUDE
+    PATTERN "*open3d_tf_ops.*" EXCLUDE
+    PATTERN "Open3DTFOps*.cmake" EXCLUDE
 )
