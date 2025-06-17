@@ -3,9 +3,9 @@ project(open3d)
 
 # https://github.com/isl-org/Open3D/releases
 set(O3D_VERSION   0.19.0)
-set(O3D_URL_MD5   08f3aee5211cbc1b2c96c66c8a82e08b)
+set(O3D_URL_MD5   b196545e2d4071f2511b0f7112065336)
 
-set(O3D_URL       https://github.com/isl-org/Open3D/releases/download/v${O3D_VERSION}/open3d-devel-linux-x86_64-cxx11-abi-cuda-${O3D_VERSION}.tar.xz)
+set(O3D_URL       https://github.com/isl-org/Open3D/releases/download/v${O3D_VERSION}/open3d_xpu-devel-linux-x86_64-${O3D_VERSION}.tar.xz)
 
 include(ExternalProject)
 ExternalProject_Add(o3d_archive
