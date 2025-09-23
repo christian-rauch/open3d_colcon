@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.22)
 project(open3d)
 
+if(POLICY CMP0135)
+  cmake_policy(SET CMP0135 NEW)
+endif()
+
 # https://github.com/isl-org/Open3D/releases
 set(O3D_VERSION   0.19.0)
 set(O3D_URL_MD5   08f3aee5211cbc1b2c96c66c8a82e08b)
